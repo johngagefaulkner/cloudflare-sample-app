@@ -12,3 +12,8 @@ export const INVITE_COMMAND = {
   name: 'invite',
   description: 'Get an invite link to add the bot to your server',
 };
+
+export const GENERATE_IMAGE_COMMAND = {
+  name: 'generate-image',
+  description: 'Open a modal to configure a Gemini 3 image generation.',
+};
