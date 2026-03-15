@@ -30,6 +30,7 @@ class JsonResponse extends Response {
 
 const router = AutoRouter();
 const GENERATE_IMAGE_MODAL_ID = 'generate_image_modal';
+const GEMINI_IMAGE_SPEC = {
 const NANO_BANANA_SPEC = {
   model: {
     label: 'Model',
@@ -174,6 +175,14 @@ function buildGenerateImageModal() {
   const components = [
     buildSelectComponent({
       customId: 'model',
+      label: GEMINI_IMAGE_SPEC.model.label,
+      options: GEMINI_IMAGE_SPEC.model.options,
+    }),
+    buildTextComponent({
+      customId: 'prompt',
+      label: GEMINI_IMAGE_SPEC.prompt.label,
+      style: GEMINI_IMAGE_SPEC.prompt.style,
+      placeholder: GEMINI_IMAGE_SPEC.prompt.placeholder,
       label: NANO_BANANA_SPEC.model.label,
       options: NANO_BANANA_SPEC.model.options,
     }),
