@@ -15,5 +15,5 @@ export const INVITE_COMMAND = {
 
 export const GENERATE_IMAGE_COMMAND = {
   name: 'generate-image',
-  description: 'Open a modal to configure a Gemini 3 image generation.',
+  description: 'Open a modal to configure a Nano Banana 3 image generation.',
 };
